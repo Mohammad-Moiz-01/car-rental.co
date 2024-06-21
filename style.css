@@ -1,0 +1,554 @@
+/* General Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #1e3a5f;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 1.5rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f4b400;
+}
+
+/* main {
+    flex: 1;
+    padding: 2rem;
+    background: linear-gradient(to right, #ece9e6, #ffffff);
+} */
+
+footer {
+    background-color: #1e3a5f;
+    color: white;
+    text-align: center;
+    padding: 1rem 2rem;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+}
+
+footer .social-icon {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+footer .social-icon:hover {
+    color: #f4b400;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-bottom: 1rem;
+        margin-left: 0;
+    }
+}
+
+/* Specific Styles for Each Section */
+.featured, .promotions, .search {
+    margin-bottom: 2rem;
+}
+
+.featured {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.featured .car {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    flex: 1 1 calc(33% - 1rem);
+    margin: 0.5rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.featured .car img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.featured .car:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.promotions {
+    text-align: center;
+    background-color: #1e3a5f;
+    color: white;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.promotions h1 {
+    margin-bottom: 1rem;
+}
+
+.promotions p {
+    font-size: 1.2rem;
+}
+
+.search {
+    text-align: center;
+}
+
+.search input[type="text"] {
+    padding: 0.5rem;
+    width: 80%;
+    max-width: 400px;
+    margin-right: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search button {
+    padding: 0.5rem 1rem;
+    background-color: #1e3a5f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search button:hover {
+    background-color: #f4b400;
+}
+
+/* Services Page Specific Styles */
+.car-listings .car-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.car-listings .car {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    flex: 1 1 calc(33% - 1rem);
+    margin: 0.5rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.car-listings .car img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.car-listings .car:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.rental-plans, .extras {
+    margin-top: 2rem;
+    text-align: center;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.rental-plans h1, .extras h1 {
+    margin-bottom: 1rem;
+}
+
+/* Contact Form Styles */
+.contact-form-section {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.contact-form-section h1 {
+    margin-top: 0;
+    font-size: 2rem;
+    color: #1e3a5f;
+    margin-bottom: 2rem;
+}
+
+.contact-form-section form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    text-align: left;
+}
+
+.contact-form-section .form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form-section label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.contact-form-section input[type="text"],
+.contact-form-section input[type="email"],
+.contact-form-section input[type="tel"],
+.contact-form-section textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form-section textarea {
+    resize: vertical;
+}
+
+.contact-form-section button {
+    padding: 0.8rem 1.5rem;
+    background-color: #1e3a5f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form-section button:hover {
+    background-color: #f4b400;
+}
+
+/* Contact Info Styles */
+.contact-info-section {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.contact-info-section h1 {
+    margin-top: 0;
+    font-size: 2rem;
+    color: #1e3a5f;
+    margin-bottom: 2rem;
+}
+
+.contact-info-section .contact-info {
+    margin-top: 1rem;
+}
+
+.contact-info-section .contact-info p {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.contact-info-section .contact-info a {
+    color: #1e3a5f;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.contact-info-section .contact-info a:hover {
+    color: #f4b400;
+}
+
+/* Map Section Styles */
+.map-section {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.map-section h1 {
+    margin-top: 0;
+    font-size: 2rem;
+    color: #1e3a5f;
+    margin-bottom: 2rem;
+}
+
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%; /* Aspect ratio 16:9 */
+    position: relative;
+    height: 0;
+}
+
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* General Styles */
+/* body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+} */
+
+/* header {
+    background-color: #1e3a5f;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+} */
+
+/* header .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+} */
+
+/* nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 1.5rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f4b400;
+} */
+
+main {
+    flex: 1;
+    padding: 2rem;
+    background: linear-gradient(to right, #ece9e6, #ffffff);
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; */
+}
+
+span{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+footer {
+    background-color: #1e3a5f;
+    color: white;
+    text-align: center;
+    padding: 1rem 2rem;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+}
+
+footer .social-icon {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+footer .social-icon:hover {
+    color: #f4b400;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-bottom: 1rem;
+        margin-left: 0;
+    }
+}
+
+/* Hero Section Styles */
+.hero {
+    text-align: center;
+    padding: 4rem 0;
+    background-color: #1e3a5f;
+    color: white;
+}
+
+.hero h1 {
+    margin-bottom: 1rem;
+}
+
+/* Company Info Section Styles */
+.company-info {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.company-info h2 {
+    margin-top: 0;
+    font-size: 2rem;
+    color: #1e3a5f;
+    margin-bottom: 2rem;
+}
+
+.company-info p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Team Section Styles */
+.team {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.team h2 {
+    margin-top: 0;
+    font-size: 2rem;
+    color: #1e3a5f;
+    margin-bottom: 2rem;
+}
+
+.team-members {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.team-member {
+    text-align: center;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #1e3a5f;
+    transition: transform 0.3s;
+}
+
+.team-member img:hover {
+    transform: scale(1.05);
+}
+
+.team-member h3 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    color: #1e3a5f;
+}
+
+.team-member p {
+    margin-bottom: 0;
+    color: #666;
+}
+
+/* Testimonials Section Styles */
+.testimonials {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}

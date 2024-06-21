@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Car Rental Service</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="car 3.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+
+
+    <script type="text/javascript">
+        (function(d, m){
+            var kommunicateSettings = 
+                {"appId":"3ff512e2cee99ade84d511f5a9888c438","popupWidget":true,"automaticChatOpenOnNavigation":true};
+            var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+            s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+            var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+            window.kommunicate = m; m._globals = kommunicateSettings;
+        })(document, window.kommunicate || {});
+    /* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
+    </script>
+
+
+
+
+    <header>
+        <div class="logo">CarRental</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <span><section class="contact-form-section">
+            <div class="container">
+                <h1>Contact Us</h1>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Format: 123-456-7890" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="car">Car Model</label>
+                        <input type="text" id="car" name="car">
+                    </div>
+                    <div class="form-group">
+                        <label for="rentalDates">Rental Dates</label>
+                        <input type="text" id="rentalDates" name="rentalDates" placeholder="e.g., 2024-07-01 to 2024-07-10">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Your message here..."></textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+        <section class="contact-info-section">
+            <div class="container">
+                <h1>Customer Service</h1>
+                <div class="contact-info">
+                    <p>For inquiries or assistance, please contact us:</p>
+                    <p>Phone: <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+                    <p>Email: <a href="mailto:info@carrental.com">info@carrental.com</a></p>
+                    <p>Hours: Monday - Friday, 9:00 AM - 5:00 PM</p>
+                </div>
+            </div>
+        </section>
+        <section class="map-section">
+            <div class="container">
+                <h1>Our Location</h1>
+                <div class="map-responsive">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19891.66551154925!2d-74.00594194812798!3d40.71277663723342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDE5JzA3LjIiTiA3NMKwMzknNTQuMiJX!5e0!3m2!1sen!2sus!4v1620955044303!5m2!1sen!2sus" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+    </main></span>
+    <footer>
+        <div class="container">
+            <p>Contact us at: info@carrental.com</p>
+            <p>Follow us on:
+                <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            </p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
